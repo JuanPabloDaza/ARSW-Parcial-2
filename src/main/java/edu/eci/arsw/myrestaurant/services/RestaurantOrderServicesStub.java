@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 public class RestaurantOrderServicesStub implements RestaurantOrderServices {
     
     @Autowired
-    @Qualifier("Basic")
+    @Qualifier("Taxes")
     BillCalculator calc;
 
     public RestaurantOrderServicesStub() {

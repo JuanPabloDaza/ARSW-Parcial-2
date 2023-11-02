@@ -47,13 +47,38 @@ Por defecto, el manejador de órdenes tiene dos órdenes registradas para las me
 ### Ejercicio
 
 1. Configure su aplicación para que ofrezca el recurso "/orders", para esto:
-   * Modifique la clase OrdersAPIController para que exponda el servicio REST necesario por medio de SpringMVC/SpringBoot.
+   * Modifique la clase OrdersAPIController para que exponda el servicio REST necesario por medio de SpringMVC/SpringBoot.<br>
+
+![](./img/Punto1.png)<br>
+
 2. Configure su aplicación para que al realizar una petición GET, retorne -en formato jSON- el conjunto de todas las órdenes y sus totales, es decir, tiene que retornar el listado de todos los productos por Orden y un campo en donde aparezca el valor total de la cuenta.
 	
-	* Importante, para el calculo del total de cada orden debe utilizar la clase "edu.eci.arsw.myrestaurant.beans.impl.BasicBillCalculator" 
+	* Importante, para el calculo del total de cada orden debe utilizar la clase "edu.eci.arsw.myrestaurant.beans.impl.BasicBillCalculator"<br>
+
+![](./img/Punto2.png)<br>
 
 
 ### Bono
 
 Haga que a la aplicación se le inyecte el bean BasicBillCalculator y BillWithTaxesCalculator. Para esto utilice el principio de los Beans revisados en laboratorios anteriores y realice la inyección de dependencias entre éstos mediante las anotaciones @Autowired y @Service.
 * Nota:  Tiene que hacer que la clase "BillWithTaxesCalculator" utilice a "edu.eci.arsw.myrestaurant.beans.impl.colombia.StandardTaxesCalculator" para realizar su calculo, no es necesario que se inyecte.
+
+Inyeccion de BasicBillCalculator:<br>
+
+![](./img/Bono1-1.png)<br>
+
+Resultado:<br>
+
+![](./img/Bono1-2.png)<br>
+
+Inyeccion de BillWithTaxesCalculator:<br>
+
+![](./img/Bono2-1.png)<br>
+
+Inyeccion de StandarTaxesCalculator:<br>
+
+![](./img/Bono2-2.png)<br>
+
+Resultado:<br>
+
+![](./img/Bono2-3.png)<br>
