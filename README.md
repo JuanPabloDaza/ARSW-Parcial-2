@@ -5,6 +5,8 @@
 
 ## Parcial segundo corte para el cálculo de cuentas de restaurantes.
 
+### Juan Pablo Daza Pinzón
+
 ### Descripción
 
 En este proyecto se va a construír un API REST que permita calcular el valor total de una cuenta de restaurante, teniendo en cuenta las políticas y regímenes tributarios configurados para la misma.
